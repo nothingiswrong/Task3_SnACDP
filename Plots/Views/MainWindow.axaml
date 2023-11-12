@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Plots.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lvc="using:LiveChartsCore.SkiaSharpView.Avalonia"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Plots.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Plots">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel />
+    </Design.DataContext>
+    <Grid RowDefinitions="* Auto">
+        <Grid ColumnDefinitions="* *" RowDefinitions="* * * *">
+            <lvc:CartesianChart Grid.Column="0" Grid.Row="0" Series="{Binding BHeapInsertSeries}"></lvc:CartesianChart>
+            <lvc:CartesianChart Grid.Column="1" Grid.Row="0" Series="{Binding ArrayInsertSeries}"></lvc:CartesianChart>
+            <lvc:CartesianChart Grid.Column="0" Grid.Row="1" Series="{Binding BHeapIncreaseSeries}"></lvc:CartesianChart>
+            <lvc:CartesianChart Grid.Column="1" Grid.Row="1" Series="{Binding ArarayIncreaseSeries}"></lvc:CartesianChart>
+            <lvc:CartesianChart Grid.Column="0" Grid.Row="2" Series="{Binding BHeapIncreaseSeries}"></lvc:CartesianChart>
+            <lvc:CartesianChart Grid.Column="1" Grid.Row="2" Series="{Binding BHeapIncreaseSeries}"></lvc:CartesianChart>
+        </Grid>
+        <Button Grid.Row="1" VerticalAlignment="Center" Width="100" Height="100" HorizontalAlignment="Center" Command="{Binding Calc}">
+            Calc
+        </Button>
+    </Grid>
+</Window>
