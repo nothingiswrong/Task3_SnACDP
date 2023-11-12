@@ -45,9 +45,5 @@ public class BinaryHeap<K, V> where K: IComparable
       }
    }
 
-   public void Remove()
-   {
-      throw new NotImplementedException();
-   }
   
 }
