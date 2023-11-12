@@ -9,14 +9,14 @@ public class BHeapPriorityQueue
 
     public int Size
     {
-        get => Elements.Length;
+        get => _top;
     }
 
     private int _top = -1;
 
     public void Insert(int x, int p)
     {
-        if (_top == Size - 1) throw new ArgumentOutOfRangeException("HeapOverflow");
+        if (_top == Elements.Length) throw new ArgumentOutOfRangeException("HeapOverflow");
         Elements[++_top] = x;
         Priorities[_top] = p;
         HeapifyUp(_top);

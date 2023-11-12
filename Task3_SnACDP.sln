@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task", "Task\Task.csproj", "{AE01A993-18B3-4E08-ADB7-976C642D7EAE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plots", "Plots\Plots.csproj", "{EC4ABFE0-91DA-40F1-AAA4-7C43077D0B62}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{AE01A993-18B3-4E08-ADB7-976C642D7EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE01A993-18B3-4E08-ADB7-976C642D7EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE01A993-18B3-4E08-ADB7-976C642D7EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4ABFE0-91DA-40F1-AAA4-7C43077D0B62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4ABFE0-91DA-40F1-AAA4-7C43077D0B62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4ABFE0-91DA-40F1-AAA4-7C43077D0B62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4ABFE0-91DA-40F1-AAA4-7C43077D0B62}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
